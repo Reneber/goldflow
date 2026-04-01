@@ -8,8 +8,6 @@
 *{margin:0;padding:0;box-sizing:border-box}
 :root{--bg:#07090f;--s1:#0d1117;--s2:#161b22;--s3:#21262d;--s4:#30363d;--gold:#f0b429;--gold2:#d99a07;--green:#2ea043;--red:#f85149;--blue:#58a6ff;--purple:#bc8cff;--text:#e6edf3;--muted:#8b949e;--dim:#484f58;--border:rgba(240,246,252,.1)}
 body{font-family:-apple-system,'Segoe UI',sans-serif;background:var(--bg);color:var(--text);min-height:100vh;overflow-x:hidden}
-
-/* Auth */
 .auth{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:1rem;background:radial-gradient(ellipse at 50% 0%,rgba(240,180,41,.05),transparent 60%)}
 .auth-box{width:400px;max-width:100%}
 .auth-logo{text-align:center;margin-bottom:1.5rem}
@@ -21,8 +19,6 @@ body{font-family:-apple-system,'Segoe UI',sans-serif;background:var(--bg);color:
 .auth-tab{flex:1;text-align:center;padding:.5rem;font-size:.85rem;font-weight:600;color:var(--muted);cursor:pointer;border-bottom:2px solid transparent}
 .auth-tab.on{color:var(--gold);border-color:var(--gold)}
 .auth-form{display:none}.auth-form.on{display:block}
-
-/* Shared */
 .field{margin-bottom:.85rem}
 .field label{display:block;font-size:.78rem;color:var(--muted);margin-bottom:.3rem;font-weight:500}
 .field input,.field select{width:100%;padding:.55rem .7rem;background:var(--s2);border:1px solid var(--s3);border-radius:8px;color:var(--text);font-size:.88rem;outline:none;transition:.15s}
@@ -36,39 +32,27 @@ body{font-family:-apple-system,'Segoe UI',sans-serif;background:var(--bg);color:
 .btn-out{background:transparent;border:1px solid var(--s3);color:var(--text)}
 .btn-sm{padding:.4rem .75rem;font-size:.8rem;width:auto}
 .err-msg{color:var(--red);font-size:.78rem;margin-top:.3rem;display:none}
-
-/* App shell */
-.app{display:none}
-.app.on{display:block}
+.app{display:none}.app.on{display:block}
 .bot-nav{position:fixed;bottom:0;left:0;right:0;background:var(--s1);border-top:1px solid var(--border);display:flex;z-index:50;padding-bottom:env(safe-area-inset-bottom)}
 .bot-nav .tab{flex:1;padding:.5rem 0;text-align:center;color:var(--dim);font-size:.65rem;cursor:pointer;transition:.1s;display:flex;flex-direction:column;align-items:center;gap:.15rem}
 .bot-nav .tab .ti{font-size:1.1rem}
 .bot-nav .tab.on{color:var(--gold)}
-.bot-nav .tab:active{opacity:.7}
 .top-bar{position:sticky;top:0;z-index:40;background:var(--s1);border-bottom:1px solid var(--border);padding:.65rem 1rem;display:flex;align-items:center;justify-content:space-between}
 .top-bar h2{font-size:1rem;font-weight:700}.top-bar h2 span{color:var(--gold)}
 .top-bar .bal{font-size:.82rem;color:var(--gold);font-weight:700}
 .content{padding:1rem 1rem 5rem}
 .page{display:none}.page.on{display:block}
-
-/* Cards */
 .cg{display:grid;gap:.65rem;margin-bottom:1rem}
-.cg2{grid-template-columns:1fr 1fr}
-.cg3{grid-template-columns:1fr 1fr 1fr}
+.cg2{grid-template-columns:1fr 1fr}.cg3{grid-template-columns:1fr 1fr 1fr}
 .c{background:var(--s1);border:1px solid var(--border);border-radius:10px;padding:.85rem}
 .cl{font-size:.68rem;color:var(--muted);text-transform:uppercase;letter-spacing:.04em}
 .cv{font-size:1.3rem;font-weight:800;margin-top:.1rem}
-.cs{font-size:.72rem;color:var(--dim)}
 .green{color:var(--green)}.red{color:var(--red)}.gold{color:var(--gold)}.blue{color:var(--blue)}.purple{color:var(--purple)}
-
-/* Panel */
 .pn{background:var(--s1);border:1px solid var(--border);border-radius:10px;margin-bottom:1rem;overflow:hidden}
 .pn-h{padding:.7rem .85rem;border-bottom:1px solid var(--border);display:flex;align-items:center;justify-content:space-between}
 .pn-h h3{font-size:.85rem;font-weight:700}
 .pn-h .sub{font-size:.72rem;color:var(--dim)}
 .pn-b{padding:.85rem}
-
-/* Table */
 .tbl{width:100%;border-collapse:collapse}
 .tbl th{text-align:left;font-size:.68rem;color:var(--muted);text-transform:uppercase;padding:.4rem .5rem;border-bottom:1px solid var(--border)}
 .tbl td{padding:.4rem .5rem;font-size:.78rem;border-bottom:1px solid rgba(255,255,255,.02)}
@@ -76,18 +60,11 @@ body{font-family:-apple-system,'Segoe UI',sans-serif;background:var(--bg);color:
 .chip-g{background:rgba(46,160,67,.12);color:var(--green)}.chip-r{background:rgba(248,81,73,.12);color:var(--red)}
 .chip-y{background:rgba(240,180,41,.12);color:var(--gold)}.chip-b{background:rgba(88,166,255,.1);color:var(--blue)}
 .chip-p{background:rgba(188,140,255,.1);color:var(--purple)}
-
-/* Wallet balance */
 .wb{text-align:center;padding:1.5rem 1rem;background:linear-gradient(135deg,rgba(240,180,41,.06),rgba(240,180,41,.02));border-radius:10px;border:1px solid rgba(240,180,41,.15);margin-bottom:1rem}
-.wb .amt{font-size:2.2rem;font-weight:900;color:var(--gold)}
-.wb .lbl{font-size:.82rem;color:var(--muted)}
+.wb .amt{font-size:2.2rem;font-weight:900;color:var(--gold)}.wb .lbl{font-size:.82rem;color:var(--muted)}
 .wb .acts{display:flex;gap:.5rem;justify-content:center;margin-top:.75rem}
-
-/* Copy */
 .copy-row{display:flex;gap:.4rem}
 .copy-row input{flex:1;padding:.45rem .6rem;background:var(--s2);border:1px solid var(--s3);border-radius:8px;color:var(--gold);font-family:monospace;font-size:.85rem}
-
-/* Modal */
 .modal-bg{position:fixed;inset:0;background:rgba(0,0,0,.6);display:none;align-items:flex-end;justify-content:center;z-index:200}
 .modal-bg.on{display:flex}
 .modal{background:var(--s1);border:1px solid var(--border);border-radius:14px 14px 0 0;width:100%;max-width:500px;animation:mUp .25s}
@@ -96,40 +73,33 @@ body{font-family:-apple-system,'Segoe UI',sans-serif;background:var(--bg);color:
 .modal-h h3{font-size:1rem;font-weight:700}
 .modal-x{background:none;border:none;color:var(--muted);font-size:1.3rem;cursor:pointer}
 .modal-b{padding:1rem}
-
-/* Toast */
 .toasts{position:fixed;top:.5rem;left:50%;transform:translateX(-50%);z-index:999;display:flex;flex-direction:column;align-items:center;gap:.3rem;width:90%;max-width:380px}
 .toast{padding:.55rem 1rem;border-radius:8px;font-size:.82rem;font-weight:500;width:100%;text-align:center;animation:tIn .2s}
 @keyframes tIn{from{opacity:0;transform:translateY(-8px)}to{opacity:1;transform:translateY(0)}}
 .toast-ok{background:rgba(46,160,67,.15);border:1px solid var(--green);color:var(--green)}
 .toast-err{background:rgba(248,81,73,.15);border:1px solid var(--red);color:var(--red)}
 .toast-warn{background:rgba(240,180,41,.15);border:1px solid var(--gold);color:var(--gold)}
-
-/* Collapse */
 .collapse-screen{position:fixed;inset:0;background:rgba(7,9,15,.95);display:none;align-items:center;justify-content:center;z-index:300;flex-direction:column;text-align:center;padding:2rem}
 .collapse-screen.on{display:flex}
 .collapse-screen h1{font-size:1.8rem;color:var(--red)}
 .collapse-screen .big{font-size:3rem;font-weight:900;color:var(--red);margin:.5rem 0}
-
-/* Scroll */
 .scr{max-height:300px;overflow-y:auto}
-
-/* Prog */
 .prog{height:5px;background:var(--s2);border-radius:3px;overflow:hidden;margin-top:.3rem}
 .prog-f{height:100%;border-radius:3px;transition:width .3s}
-
-/* Empty */
 .empty{text-align:center;padding:1.5rem;color:var(--dim);font-size:.85rem}
-
-/* Admin specific */
 .admin-warn{background:rgba(248,81,73,.08);border:1px solid rgba(248,81,73,.3);border-radius:10px;padding:1rem;margin-bottom:1rem;text-align:center}
 .admin-warn h3{color:var(--red);margin-bottom:.25rem}
-
-@media(min-width:600px){
-  .content{max-width:600px;margin:0 auto}
-  .modal{border-radius:14px;margin-bottom:2rem}
-  .modal-bg{align-items:center}
-}
+/* Pending screen */
+.pending-screen{min-height:100vh;display:none;align-items:center;justify-content:center;padding:1.5rem;text-align:center}
+.pending-screen.on{display:flex}
+.pending-box{max-width:400px;width:100%}
+.pix-box{background:var(--s1);border:2px solid var(--gold);border-radius:14px;padding:1.5rem;margin:1rem 0}
+.pix-box .pix-key{font-size:1.1rem;font-weight:700;color:var(--gold);word-break:break-all;margin:.5rem 0;padding:.6rem;background:var(--s2);border-radius:8px;font-family:monospace}
+.pix-box .pix-val{font-size:2rem;font-weight:900;color:var(--green);margin:.5rem 0}
+.waiting-box{background:var(--s1);border:2px solid var(--blue);border-radius:14px;padding:2rem;margin:1rem 0}
+.badge-count{position:absolute;top:-.2rem;right:50%;transform:translateX(80%);background:var(--red);color:#fff;font-size:.55rem;padding:0 4px;border-radius:6px;font-weight:700;min-width:14px;text-align:center}
+.bot-nav .tab{position:relative}
+@media(min-width:600px){.content{max-width:600px;margin:0 auto}.modal{border-radius:14px;margin-bottom:2rem}.modal-bg{align-items:center}}
 </style>
 </head>
 <body>
@@ -152,17 +122,52 @@ body{font-family:-apple-system,'Segoe UI',sans-serif;background:var(--bg);color:
         <div class="field"><label>Senha</label><input type="password" id="lPass" placeholder="sua senha"></div>
         <div class="err-msg" id="lErr"></div>
         <button class="btn btn-gold" onclick="login()">Entrar</button>
-        <p style="text-align:center;margin-top:.75rem;font-size:.75rem;color:var(--dim)">Professor: admin / admin</p>
       </div>
       <div class="auth-form" id="fRegister">
         <div class="field"><label>Seu nome</label><input id="rName" placeholder="Ex: Maria"></div>
-        <div class="field"><label>Email ou apelido (para login)</label><input id="rEmail" placeholder="Ex: maria123"></div>
+        <div class="field"><label>Email ou apelido (login)</label><input id="rEmail" placeholder="Ex: maria123"></div>
         <div class="field"><label>Senha</label><input type="password" id="rPass" placeholder="mínimo 3 caracteres"></div>
         <div class="field"><label>Código de convite</label><input id="rInvite" placeholder="Ex: GF-A1B2C3" style="text-transform:uppercase"></div>
         <div class="field"><label>Plano de investimento</label><select id="rPlan"></select></div>
         <div class="err-msg" id="rErr"></div>
-        <button class="btn btn-gold" onclick="register()">Criar conta e Investir</button>
+        <button class="btn btn-gold" onclick="register()">Criar conta</button>
       </div>
+    </div>
+  </div>
+</div>
+
+<!-- PENDING PAYMENT / APPROVAL -->
+<div class="pending-screen" id="pendingScreen">
+  <div class="pending-box">
+    <div class="auth-logo">
+      <div class="icon">G</div>
+      <h1>Gold<span>Flow</span></h1>
+    </div>
+    <!-- Payment step -->
+    <div id="stepPayment" style="display:none">
+      <h3 style="margin-bottom:.5rem">Realize o pagamento via PIX</h3>
+      <p style="color:var(--muted);font-size:.85rem">Envie o valor exato para a chave abaixo</p>
+      <div class="pix-box">
+        <div style="font-size:.75rem;color:var(--muted)">Valor do plano</div>
+        <div class="pix-val" id="pixValue">R$ 0,00</div>
+        <div style="font-size:.75rem;color:var(--muted);margin-top:.5rem">Chave PIX (<span id="pixTypeLabel">CPF</span>)</div>
+        <div class="pix-key" id="pixKeyDisplay">-</div>
+        <div style="font-size:.75rem;color:var(--muted)">Nome: <strong id="pixNameDisplay">-</strong></div>
+        <button class="btn btn-out btn-sm" style="margin-top:.75rem;width:100%" onclick="copyPix()">Copiar chave PIX</button>
+      </div>
+      <button class="btn btn-green" onclick="confirmPayment()">Ja realizei o pagamento</button>
+      <button class="btn btn-out btn-sm" style="margin-top:.5rem;width:100%" onclick="logout()">Cancelar</button>
+    </div>
+    <!-- Waiting approval step -->
+    <div id="stepWaiting" style="display:none">
+      <div class="waiting-box">
+        <div style="font-size:2.5rem;margin-bottom:.5rem">&#9203;</div>
+        <h3>Pagamento em analise</h3>
+        <p style="color:var(--muted);font-size:.85rem;margin-top:.5rem">Seu pagamento esta sendo verificado pelo administrador. Aguarde a aprovacao.</p>
+        <p style="color:var(--gold);font-size:.85rem;font-weight:600;margin-top:1rem" id="waitPlan">-</p>
+      </div>
+      <button class="btn btn-out btn-sm" style="width:100%" onclick="logout()">Sair</button>
+      <p style="font-size:.72rem;color:var(--dim);margin-top:.75rem">A pagina atualiza automaticamente quando aprovado</p>
     </div>
   </div>
 </div>
@@ -174,7 +179,6 @@ body{font-family:-apple-system,'Segoe UI',sans-serif;background:var(--bg);color:
     <div class="bal" id="topBal">R$ 0,00</div>
   </div>
   <div class="content">
-
     <!-- HOME -->
     <div class="page on" id="pg-home">
       <div class="cg cg2">
@@ -183,199 +187,148 @@ body{font-family:-apple-system,'Segoe UI',sans-serif;background:var(--bg);color:
         <div class="c"><div class="cl">Investido</div><div class="cv blue" id="hInv">R$ 0</div></div>
         <div class="c"><div class="cl">Retorno</div><div class="cv" id="hRoi">0%</div></div>
       </div>
-      <div class="pn">
-        <div class="pn-h"><h3>Minha rede</h3></div>
-        <div class="pn-b">
-          <div class="cg cg3" style="margin-bottom:.5rem">
-            <div style="text-align:center"><div class="cl">Diretos</div><div style="font-size:1.2rem;font-weight:800" id="hDir">0</div></div>
-            <div style="text-align:center"><div class="cl">Indiretos</div><div style="font-size:1.2rem;font-weight:800" id="hInd">0</div></div>
-            <div style="text-align:center"><div class="cl">Total</div><div style="font-size:1.2rem;font-weight:800" id="hNet">0</div></div>
-          </div>
+      <div class="pn"><div class="pn-h"><h3>Minha rede</h3></div><div class="pn-b">
+        <div class="cg cg3" style="margin-bottom:.5rem">
+          <div style="text-align:center"><div class="cl">Diretos</div><div style="font-size:1.2rem;font-weight:800" id="hDir">0</div></div>
+          <div style="text-align:center"><div class="cl">Indiretos</div><div style="font-size:1.2rem;font-weight:800" id="hInd">0</div></div>
+          <div style="text-align:center"><div class="cl">Total</div><div style="font-size:1.2rem;font-weight:800" id="hNet">0</div></div>
         </div>
-      </div>
-      <div class="pn">
-        <div class="pn-h"><h3>Seu código de convite</h3></div>
-        <div class="pn-b">
-          <div class="copy-row"><input readonly id="hCode"><button class="btn btn-gold btn-sm" onclick="copyCode()">Copiar</button></div>
-          <p style="font-size:.72rem;color:var(--dim);margin-top:.4rem">Envie para colegas. Você ganha comissão quando eles entram!</p>
-        </div>
-      </div>
-      <div class="pn">
-        <div class="pn-h"><h3>Últimas movimentações</h3></div>
-        <div class="pn-b scr" id="hRecent"><div class="empty">Nenhuma movimentação</div></div>
-      </div>
+      </div></div>
+      <div class="pn"><div class="pn-h"><h3>Seu codigo de convite</h3></div><div class="pn-b">
+        <div class="copy-row"><input readonly id="hCode"><button class="btn btn-gold btn-sm" onclick="copyCode()">Copiar</button></div>
+        <p style="font-size:.72rem;color:var(--dim);margin-top:.4rem">Envie para colegas. Voce ganha comissao quando eles entram!</p>
+      </div></div>
+      <div class="pn"><div class="pn-h"><h3>Ultimas movimentacoes</h3></div><div class="pn-b scr" id="hRecent"><div class="empty">Nenhuma movimentacao</div></div></div>
     </div>
-
     <!-- WALLET -->
     <div class="page" id="pg-wallet">
-      <div class="wb">
-        <div class="lbl">Saldo disponível</div>
-        <div class="amt" id="wBal">R$ 0,00</div>
-        <div class="acts">
-          <button class="btn btn-green btn-sm" onclick="openM('mDeposit')">Depositar</button>
-          <button class="btn btn-out btn-sm" onclick="openM('mWithdraw')">Sacar</button>
-        </div>
+      <div class="wb"><div class="lbl">Saldo disponivel</div><div class="amt" id="wBal">R$ 0,00</div>
+        <div class="acts"><button class="btn btn-green btn-sm" onclick="openM('mDeposit')">Depositar</button><button class="btn btn-out btn-sm" onclick="openM('mWithdraw')">Sacar</button></div>
       </div>
       <div class="cg cg3">
         <div class="c"><div class="cl">Depositado</div><div class="cv green" id="wDep">R$ 0</div></div>
         <div class="c"><div class="cl">Sacado</div><div class="cv red" id="wWith">R$ 0</div></div>
-        <div class="c"><div class="cl">Comissões</div><div class="cv gold" id="wComm">R$ 0</div></div>
+        <div class="c"><div class="cl">Comissoes</div><div class="cv gold" id="wComm">R$ 0</div></div>
       </div>
-      <div class="pn">
-        <div class="pn-h"><h3>Extrato</h3></div>
-        <div class="pn-b scr" style="padding:0"><table class="tbl"><thead><tr><th>Data</th><th>Tipo</th><th>Valor</th><th>Saldo</th></tr></thead><tbody id="wTx"></tbody></table></div>
-      </div>
+      <div class="pn"><div class="pn-h"><h3>Extrato</h3></div><div class="pn-b scr" style="padding:0"><table class="tbl"><thead><tr><th>Data</th><th>Tipo</th><th>Valor</th><th>Saldo</th></tr></thead><tbody id="wTx"></tbody></table></div></div>
     </div>
-
     <!-- NETWORK -->
     <div class="page" id="pg-network">
       <div class="cg cg3">
         <div class="c"><div class="cl">Diretos</div><div class="cv blue" id="nDir">0</div></div>
-        <div class="c"><div class="cl">Nível 2</div><div class="cv purple" id="nL2">0</div></div>
+        <div class="c"><div class="cl">Nivel 2</div><div class="cv purple" id="nL2">0</div></div>
         <div class="c"><div class="cl">Total</div><div class="cv gold" id="nTot">0</div></div>
       </div>
-      <div class="pn">
-        <div class="pn-h"><h3>Minha rede</h3></div>
-        <div class="pn-b scr" style="padding:0"><table class="tbl"><thead><tr><th>Nome</th><th>Tipo</th><th>Plano</th><th>Rede</th></tr></thead><tbody id="nTable"></tbody></table></div>
-      </div>
-      <div class="pn">
-        <div class="pn-h"><h3>Tabela de comissões</h3></div>
-        <div class="pn-b">
-          <table class="tbl">
-            <tr><td>Nível 1 (direto)</td><td><strong class="green">10%</strong></td></tr>
-            <tr><td>Nível 2</td><td><strong class="blue">5%</strong></td></tr>
-            <tr><td>Nível 3</td><td><strong class="purple">2%</strong></td></tr>
-          </table>
-        </div>
-      </div>
+      <div class="pn"><div class="pn-h"><h3>Minha rede</h3></div><div class="pn-b scr" style="padding:0"><table class="tbl"><thead><tr><th>Nome</th><th>Tipo</th><th>Plano</th><th>Rede</th></tr></thead><tbody id="nTable"></tbody></table></div></div>
+      <div class="pn"><div class="pn-h"><h3>Tabela de comissoes</h3></div><div class="pn-b"><table class="tbl">
+        <tr><td>Nivel 1 (direto)</td><td><strong class="green">10%</strong></td></tr>
+        <tr><td>Nivel 2</td><td><strong class="blue">5%</strong></td></tr>
+        <tr><td>Nivel 3</td><td><strong class="purple">2%</strong></td></tr>
+      </table></div></div>
     </div>
-
     <!-- RANKING -->
     <div class="page" id="pg-ranking">
-      <div class="pn">
-        <div class="pn-h"><h3>Top Recrutadores</h3></div>
-        <div class="pn-b scr" style="padding:0"><table class="tbl"><thead><tr><th>#</th><th>Nome</th><th>Rede</th><th>Ganhos</th></tr></thead><tbody id="rkTable"></tbody></table></div>
-      </div>
+      <div class="pn"><div class="pn-h"><h3>Top Recrutadores</h3></div><div class="pn-b scr" style="padding:0"><table class="tbl"><thead><tr><th>#</th><th>Nome</th><th>Rede</th><th>Ganhos</th></tr></thead><tbody id="rkTable"></tbody></table></div></div>
     </div>
-
     <!-- ADMIN -->
     <div class="page" id="pg-admin">
-      <div class="admin-warn" id="adminCollapse" style="display:none">
-        <h3>&#9888; SISTEMA COLAPSADO</h3>
-        <p style="color:var(--muted);font-size:.85rem">O caixa não cobre os saldos dos membros</p>
+      <div class="admin-warn" id="adminCollapse" style="display:none"><h3>&#9888; SISTEMA COLAPSADO</h3><p style="color:var(--muted);font-size:.85rem">O caixa nao cobre os saldos</p></div>
+      <!-- Pending approvals -->
+      <div class="pn" id="pendingPanel" style="display:none">
+        <div class="pn-h" style="background:rgba(240,180,41,.06)"><h3 style="color:var(--gold)">Aprovacoes pendentes</h3><span class="sub" id="pendingCount">0</span></div>
+        <div class="pn-b scr" id="pendingList"></div>
       </div>
       <div class="cg cg2">
-        <div class="c"><div class="cl">Membros</div><div class="cv blue" id="aMemb">0</div></div>
+        <div class="c"><div class="cl">Membros ativos</div><div class="cv blue" id="aMemb">0</div></div>
         <div class="c"><div class="cl">$ Investido</div><div class="cv gold" id="aInv">R$ 0</div></div>
         <div class="c"><div class="cl">$ Pago</div><div class="cv green" id="aPaid">R$ 0</div></div>
         <div class="c"><div class="cl">Caixa real</div><div class="cv" id="aCash">R$ 0</div></div>
       </div>
       <div class="cg cg3">
         <div class="c"><div class="cl">No lucro</div><div class="cv green" id="aProf">0</div></div>
-        <div class="c"><div class="cl">No prejuízo</div><div class="cv red" id="aLoss">0</div></div>
-        <div class="c"><div class="cl">% prejuízo</div><div class="cv red" id="aLPct">0%</div></div>
+        <div class="c"><div class="cl">No prejuizo</div><div class="cv red" id="aLoss">0</div></div>
+        <div class="c"><div class="cl">% prejuizo</div><div class="cv red" id="aLPct">0%</div></div>
       </div>
-      <div class="pn">
-        <div class="pn-h"><h3>Saúde do caixa</h3></div>
-        <div class="pn-b">
-          <div style="display:flex;justify-content:space-between;font-size:.8rem"><span>Caixa real</span><span id="aRC">R$ 0</span></div>
-          <div class="prog"><div class="prog-f" id="aRCp" style="width:100%;background:var(--green)"></div></div>
-          <div style="display:flex;justify-content:space-between;font-size:.8rem;margin-top:.5rem"><span>Saldos dos membros</span><span id="aTB">R$ 0</span></div>
-          <div class="prog"><div class="prog-f" id="aTBp" style="width:0%;background:var(--red)"></div></div>
-          <p style="font-size:.78rem;margin-top:.5rem;font-weight:600" id="aHealth"></p>
-        </div>
-      </div>
-      <div class="pn">
-        <div class="pn-h"><h3>Distribuição por nível</h3></div>
-        <div class="pn-b scr" id="aDist"></div>
-      </div>
-      <div class="pn">
-        <div class="pn-h"><h3>Todos os membros</h3></div>
-        <div class="pn-b scr" style="padding:0;overflow-x:auto"><table class="tbl"><thead><tr><th>Nome</th><th>Nív</th><th>Plano</th><th>Ganhou</th><th>Saldo</th><th>Rede</th><th>St</th></tr></thead><tbody id="aTable"></tbody></table></div>
-      </div>
-      <div class="pn">
-        <div class="pn-h"><h3>Controles</h3></div>
-        <div class="pn-b" style="display:flex;gap:.5rem;flex-wrap:wrap">
-          <button class="btn btn-red btn-sm" onclick="adminCollapse()">Forçar colapso</button>
-          <button class="btn btn-out btn-sm" onclick="adminReopen()">Reabrir sistema</button>
-          <button class="btn btn-out btn-sm" onclick="adminReset()">Resetar tudo</button>
-        </div>
-      </div>
+      <div class="pn"><div class="pn-h"><h3>Saude do caixa</h3></div><div class="pn-b">
+        <div style="display:flex;justify-content:space-between;font-size:.8rem"><span>Caixa real</span><span id="aRC">R$ 0</span></div>
+        <div class="prog"><div class="prog-f" id="aRCp" style="width:100%;background:var(--green)"></div></div>
+        <div style="display:flex;justify-content:space-between;font-size:.8rem;margin-top:.5rem"><span>Saldos dos membros</span><span id="aTB">R$ 0</span></div>
+        <div class="prog"><div class="prog-f" id="aTBp" style="width:0%;background:var(--red)"></div></div>
+        <p style="font-size:.78rem;margin-top:.5rem;font-weight:600" id="aHealth"></p>
+      </div></div>
+      <div class="pn"><div class="pn-h"><h3>Distribuicao por nivel</h3></div><div class="pn-b scr" id="aDist"></div></div>
+      <div class="pn"><div class="pn-h"><h3>Todos os membros</h3></div><div class="pn-b scr" style="padding:0;overflow-x:auto"><table class="tbl"><thead><tr><th>Nome</th><th>Niv</th><th>Plano</th><th>Ganhou</th><th>Saldo</th><th>Rede</th><th>St</th></tr></thead><tbody id="aTable"></tbody></table></div></div>
+      <!-- PIX Settings -->
+      <div class="pn"><div class="pn-h"><h3>Configurar PIX</h3></div><div class="pn-b">
+        <div class="field"><label>Tipo da chave</label><select id="cfgPixType"><option>CPF</option><option>Email</option><option>Telefone</option><option>Aleatoria</option></select></div>
+        <div class="field"><label>Chave PIX</label><input id="cfgPixKey" placeholder="Sua chave PIX"></div>
+        <div class="field"><label>Nome do recebedor</label><input id="cfgPixName" placeholder="Nome que aparece no PIX"></div>
+        <button class="btn btn-gold btn-sm" onclick="savePix()">Salvar PIX</button>
+      </div></div>
+      <div class="pn"><div class="pn-h"><h3>Controles</h3></div><div class="pn-b" style="display:flex;gap:.5rem;flex-wrap:wrap">
+        <button class="btn btn-red btn-sm" onclick="adminCollapse()">Forcar colapso</button>
+        <button class="btn btn-out btn-sm" onclick="adminReopen()">Reabrir</button>
+        <button class="btn btn-out btn-sm" onclick="adminReset()">Resetar tudo</button>
+      </div></div>
     </div>
-
   </div>
-
-  <!-- Bottom nav -->
   <nav class="bot-nav">
-    <div class="tab on" data-pg="home" onclick="go(this)"><div class="ti">&#9632;</div>Início</div>
+    <div class="tab on" data-pg="home" onclick="go(this)"><div class="ti">&#9632;</div>Inicio</div>
     <div class="tab" data-pg="wallet" onclick="go(this)"><div class="ti">&#9733;</div>Carteira</div>
     <div class="tab" data-pg="network" onclick="go(this)"><div class="ti">&#9679;</div>Rede</div>
     <div class="tab" data-pg="ranking" onclick="go(this)"><div class="ti">&#9650;</div>Ranking</div>
-    <div class="tab" data-pg="admin" onclick="go(this)" id="tabAdmin" style="display:none"><div class="ti">&#9881;</div>Admin</div>
+    <div class="tab" data-pg="admin" onclick="go(this)" id="tabAdmin" style="display:none"><div class="ti">&#9881;</div>Admin<span class="badge-count" id="adminBadge" style="display:none">0</span></div>
   </nav>
 </div>
 
 <!-- Deposit Modal -->
-<div class="modal-bg" id="mDeposit">
-  <div class="modal">
-    <div class="modal-h"><h3>Depositar</h3><button class="modal-x" onclick="closeM('mDeposit')">&times;</button></div>
-    <div class="modal-b">
-      <div class="field"><label>Valor (R$)</label><input type="number" id="depAmt" min="1" step="1" value="5"></div>
-      <button class="btn btn-green" style="margin-top:.5rem" onclick="doDeposit()">Confirmar depósito</button>
-    </div>
-  </div>
-</div>
+<div class="modal-bg" id="mDeposit"><div class="modal"><div class="modal-h"><h3>Depositar</h3><button class="modal-x" onclick="closeM('mDeposit')">&times;</button></div><div class="modal-b">
+  <div class="field"><label>Valor (R$)</label><input type="number" id="depAmt" min="1" step="1" value="5"></div>
+  <button class="btn btn-green" style="margin-top:.5rem" onclick="doDeposit()">Confirmar deposito</button>
+</div></div></div>
 
 <!-- Withdraw Modal -->
-<div class="modal-bg" id="mWithdraw">
-  <div class="modal">
-    <div class="modal-h"><h3>Sacar</h3><button class="modal-x" onclick="closeM('mWithdraw')">&times;</button></div>
-    <div class="modal-b">
-      <div class="field"><label>Valor (R$)</label><input type="number" id="witAmt" min="1" step="1" value="2"></div>
-      <p style="font-size:.78rem;color:var(--muted)">Taxa de saque: 5%</p>
-      <button class="btn btn-gold" style="margin-top:.5rem" onclick="doWithdraw()">Solicitar saque</button>
-    </div>
-  </div>
-</div>
+<div class="modal-bg" id="mWithdraw"><div class="modal"><div class="modal-h"><h3>Sacar</h3><button class="modal-x" onclick="closeM('mWithdraw')">&times;</button></div><div class="modal-b">
+  <div class="field"><label>Valor (R$)</label><input type="number" id="witAmt" min="1" step="1" value="2"></div>
+  <p style="font-size:.78rem;color:var(--muted)">Taxa de saque: 5%</p>
+  <button class="btn btn-gold" style="margin-top:.5rem" onclick="doWithdraw()">Solicitar saque</button>
+</div></div></div>
 
-<!-- Collapse overlay -->
+<!-- Collapse -->
 <div class="collapse-screen" id="coScreen">
-  <h1>&#9888; SAQUE NEGADO</h1>
-  <div class="big">SEM FUNDOS</div>
-  <p style="color:var(--muted);max-width:350px;margin-bottom:1.5rem">O sistema não tem dinheiro suficiente para pagar seu saque. A pirâmide colapsou.</p>
+  <h1>&#9888; SAQUE NEGADO</h1><div class="big">SEM FUNDOS</div>
+  <p style="color:var(--muted);max-width:350px;margin-bottom:1.5rem">O sistema nao tem dinheiro para pagar seu saque. A piramide colapsou.</p>
   <button class="btn btn-out btn-sm" onclick="document.getElementById('coScreen').classList.remove('on')">Fechar</button>
 </div>
 
-<!-- Toasts -->
 <div class="toasts" id="toasts"></div>
 
 <script>
-let token = localStorage.getItem('gf_token');
-let user = null;
-let refreshTimer = null;
+let token=localStorage.getItem('gf_token'),user=null,refreshTimer=null;
 
-const API = '';
-
-// ========== HELPERS ==========
 function R$(n){return 'R$ '+Number(n).toFixed(2)}
 function fmtD(ts){return new Date(ts).toLocaleString('pt-BR',{day:'2-digit',month:'2-digit',hour:'2-digit',minute:'2-digit'})}
 function toast(m,t='ok'){const e=document.createElement('div');e.className='toast toast-'+t;e.textContent=m;document.getElementById('toasts').appendChild(e);setTimeout(()=>e.remove(),3500)}
 function openM(id){document.getElementById(id).classList.add('on')}
 function closeM(id){document.getElementById(id).classList.remove('on')}
+function showErr(id,m){const e=document.getElementById(id);e.textContent=m;e.style.display='block';setTimeout(()=>e.style.display='none',4000)}
 
 async function api(path,opts={}){
     const headers={'Content-Type':'application/json'};
     if(token) headers['Authorization']='Bearer '+token;
-    const r=await fetch(API+path,{...opts,headers});
+    const r=await fetch(path,{...opts,headers});
     const d=await r.json();
-    if(!r.ok){
-        if(d.collapsed){document.getElementById('coScreen').classList.add('on')}
-        throw new Error(d.error||'Erro');
-    }
+    if(!r.ok){if(d.collapsed) document.getElementById('coScreen').classList.add('on');throw new Error(d.error||'Erro')}
     return d;
 }
 
-// ========== AUTH ==========
+function hideAll(){
+    document.getElementById('authScreen').style.display='none';
+    document.getElementById('pendingScreen').classList.remove('on');
+    document.getElementById('appRoot').classList.remove('on');
+}
+
+// AUTH
 function authTab(t){
     document.querySelectorAll('.auth-tab').forEach((e,i)=>e.classList.toggle('on',t==='login'?i===0:i===1));
     document.getElementById('fLogin').classList.toggle('on',t==='login');
@@ -385,46 +338,97 @@ function authTab(t){
 async function login(){
     try{
         const d=await api('/api/login',{method:'POST',body:JSON.stringify({email:document.getElementById('lEmail').value,password:document.getElementById('lPass').value})});
-        token=d.token;user=d.user;localStorage.setItem('gf_token',token);enterApp();
+        token=d.token;user=d.user;localStorage.setItem('gf_token',token);
+        routeUser();
     }catch(e){showErr('lErr',e.message)}
 }
 
 async function register(){
     try{
         const d=await api('/api/register',{method:'POST',body:JSON.stringify({
-            name:document.getElementById('rName').value,
-            email:document.getElementById('rEmail').value,
-            password:document.getElementById('rPass').value,
-            inviteCode:document.getElementById('rInvite').value,
+            name:document.getElementById('rName').value,email:document.getElementById('rEmail').value,
+            password:document.getElementById('rPass').value,inviteCode:document.getElementById('rInvite').value,
             plan:document.getElementById('rPlan').value
         })});
         token=d.token;user=d.user;localStorage.setItem('gf_token',token);
-        toast(d.message,'ok');enterApp();
+        routeUser();
     }catch(e){showErr('rErr',e.message)}
 }
 
-function showErr(id,m){const e=document.getElementById(id);e.textContent=m;e.style.display='block';setTimeout(()=>e.style.display='none',4000)}
-
 function logout(){
     token=null;user=null;localStorage.removeItem('gf_token');
-    document.getElementById('appRoot').classList.remove('on');
-    document.getElementById('authScreen').style.display='flex';
     clearInterval(refreshTimer);
+    hideAll();
+    document.getElementById('authScreen').style.display='flex';
 }
 
-// ========== APP ==========
-async function enterApp(){
+// ROUTING based on user status
+async function routeUser(){
     try{
         const d=await api('/api/me');
         user=d.user;
-        document.getElementById('authScreen').style.display='none';
-        document.getElementById('appRoot').classList.add('on');
-        document.getElementById('tabAdmin').style.display=user.isAdmin?'flex':'none';
-        refreshCurrent();
-        // Auto-refresh every 5 seconds
-        clearInterval(refreshTimer);
-        refreshTimer=setInterval(refreshCurrent,5000);
+        hideAll();
+
+        if(user.status==='pending_payment'){
+            showPaymentScreen();
+        } else if(user.status==='pending_approval'){
+            showWaitingScreen();
+        } else {
+            enterApp();
+        }
     }catch(e){logout()}
+}
+
+async function showPaymentScreen(){
+    document.getElementById('pendingScreen').classList.add('on');
+    document.getElementById('stepPayment').style.display='block';
+    document.getElementById('stepWaiting').style.display='none';
+    try{
+        const d=await api('/api/pix-info');
+        document.getElementById('pixValue').textContent=R$(d.plan);
+        document.getElementById('pixKeyDisplay').textContent=d.pixKey||'(admin ainda nao configurou)';
+        document.getElementById('pixTypeLabel').textContent=d.pixType||'CPF';
+        document.getElementById('pixNameDisplay').textContent=d.pixName||'-';
+    }catch(e){}
+}
+
+function showWaitingScreen(){
+    document.getElementById('pendingScreen').classList.add('on');
+    document.getElementById('stepPayment').style.display='none';
+    document.getElementById('stepWaiting').style.display='block';
+    document.getElementById('waitPlan').textContent=`Plano: ${user.planName} (${R$(user.plan)})`;
+    // Poll for approval
+    clearInterval(refreshTimer);
+    refreshTimer=setInterval(async()=>{
+        try{
+            const d=await api('/api/me');
+            user=d.user;
+            if(user.status==='active'){clearInterval(refreshTimer);routeUser()}
+        }catch(e){}
+    },4000);
+}
+
+async function confirmPayment(){
+    try{
+        const d=await api('/api/confirm-payment',{method:'POST'});
+        toast(d.message,'ok');
+        user.status='pending_approval';
+        showWaitingScreen();
+    }catch(e){toast(e.message,'err')}
+}
+
+function copyPix(){
+    const key=document.getElementById('pixKeyDisplay').textContent;
+    navigator.clipboard.writeText(key).then(()=>toast('Chave PIX copiada!','ok')).catch(()=>{});
+}
+
+// APP
+function enterApp(){
+    document.getElementById('appRoot').classList.add('on');
+    document.getElementById('tabAdmin').style.display=user.isAdmin?'flex':'none';
+    refreshCurrent();
+    clearInterval(refreshTimer);
+    refreshTimer=setInterval(refreshCurrent,5000);
 }
 
 function go(el){
@@ -439,22 +443,20 @@ function go(el){
 }
 
 async function refreshCurrent(){
-    if(!token) return;
+    if(!token)return;
     try{
-        const d=await api('/api/me');
-        user=d.user;
+        const d=await api('/api/me');user=d.user;
         document.getElementById('topBal').textContent=R$(user.balance);
-
         const active=document.querySelector('.page.on')?.id?.replace('pg-','');
-        if(active==='home') renderHome(d);
-        if(active==='wallet') renderWallet();
-        if(active==='network') renderNetwork();
-        if(active==='ranking') renderRanking();
-        if(active==='admin'&&user.isAdmin) renderAdmin();
+        if(active==='home')renderHome(d);
+        if(active==='wallet')renderWallet();
+        if(active==='network')renderNetwork();
+        if(active==='ranking')renderRanking();
+        if(active==='admin'&&user.isAdmin)renderAdmin();
     }catch(e){}
 }
 
-// ========== HOME ==========
+// HOME
 async function renderHome(data){
     const u=user,s=data.stats;
     document.getElementById('hBal').textContent=R$(u.balance);
@@ -467,12 +469,11 @@ async function renderHome(data){
     document.getElementById('hInd').textContent=s.indirectCount;
     document.getElementById('hNet').textContent=s.networkTotal;
     document.getElementById('hCode').value=u.inviteCode;
-
     try{
         const t=await api('/api/my-transactions');
         const recent=t.transactions.slice(0,8);
         const el=document.getElementById('hRecent');
-        if(!recent.length){el.innerHTML='<div class="empty">Nenhuma movimentação</div>';return}
+        if(!recent.length){el.innerHTML='<div class="empty">Nenhuma movimentacao</div>';return}
         el.innerHTML=recent.map(tx=>{
             const cr=tx.type.includes('commission')||tx.type==='bonus'||tx.type==='deposit'||tx.type==='investment';
             return `<div style="display:flex;justify-content:space-between;padding:.35rem 0;border-bottom:1px solid rgba(255,255,255,.03);font-size:.78rem">
@@ -482,7 +483,7 @@ async function renderHome(data){
     }catch(e){}
 }
 
-// ========== WALLET ==========
+// WALLET
 async function renderWallet(){
     document.getElementById('wBal').textContent=R$(user.balance);
     document.getElementById('wDep').textContent=R$(user.totalDeposited);
@@ -490,31 +491,16 @@ async function renderWallet(){
     document.getElementById('wComm').textContent=R$(user.totalEarnings);
     try{
         const d=await api('/api/my-transactions');
-        const chips={deposit:'<span class="chip chip-g">Dep</span>',investment:'<span class="chip chip-b">Inv</span>',
-            withdraw:'<span class="chip chip-r">Saque</span>',commission:'<span class="chip chip-y">Com</span>',
-            commission_partial:'<span class="chip chip-r">Com!</span>',bonus:'<span class="chip chip-p">Bônus</span>',
-            withdraw_denied:'<span class="chip chip-r">Negado</span>'};
+        const chips={deposit:'<span class="chip chip-g">Dep</span>',investment:'<span class="chip chip-b">Inv</span>',withdraw:'<span class="chip chip-r">Saque</span>',commission:'<span class="chip chip-y">Com</span>',commission_partial:'<span class="chip chip-r">Com!</span>',bonus:'<span class="chip chip-p">Bonus</span>',withdraw_denied:'<span class="chip chip-r">Negado</span>'};
         document.getElementById('wTx').innerHTML=d.transactions.slice(0,50).map(t=>
             `<tr><td style="white-space:nowrap;font-size:.72rem">${fmtD(t.time)}</td><td>${chips[t.type]||t.type}</td>
             <td style="font-weight:600">${R$(t.amount)}</td><td>${R$(t.balanceAfter)}</td></tr>`).join('');
     }catch(e){}
 }
+async function doDeposit(){try{const d=await api('/api/deposit',{method:'POST',body:JSON.stringify({amount:parseFloat(document.getElementById('depAmt').value)})});toast(d.message,'ok');closeM('mDeposit');refreshCurrent()}catch(e){toast(e.message,'err')}}
+async function doWithdraw(){try{const d=await api('/api/withdraw',{method:'POST',body:JSON.stringify({amount:parseFloat(document.getElementById('witAmt').value)})});toast(d.message,'ok');closeM('mWithdraw');refreshCurrent()}catch(e){toast(e.message,'err')}}
 
-async function doDeposit(){
-    try{
-        const d=await api('/api/deposit',{method:'POST',body:JSON.stringify({amount:parseFloat(document.getElementById('depAmt').value)})});
-        toast(d.message,'ok');closeM('mDeposit');refreshCurrent();
-    }catch(e){toast(e.message,'err')}
-}
-
-async function doWithdraw(){
-    try{
-        const d=await api('/api/withdraw',{method:'POST',body:JSON.stringify({amount:parseFloat(document.getElementById('witAmt').value)})});
-        toast(d.message,'ok');closeM('mWithdraw');refreshCurrent();
-    }catch(e){toast(e.message,'err')}
-}
-
-// ========== NETWORK ==========
+// NETWORK
 async function renderNetwork(){
     try{
         const d=await api('/api/my-network');
@@ -523,26 +509,43 @@ async function renderNetwork(){
         document.getElementById('nTot').textContent=d.directs.length+d.indirects.length;
         const all=[...d.directs,...d.indirects];
         document.getElementById('nTable').innerHTML=all.length===0?'<tr><td colspan="4" class="empty">Nenhum membro</td></tr>':
-            all.map(m=>`<tr><td>${m.name}</td><td><span class="chip ${m.relation==='Direto'?'chip-b':'chip-p'}">${m.relation}</span></td>
-                <td>${m.plan}</td><td>${m.recruits}</td></tr>`).join('');
+            all.map(m=>`<tr><td>${m.name}</td><td><span class="chip ${m.relation==='Direto'?'chip-b':'chip-p'}">${m.relation}</span></td><td>${m.plan}</td><td>${m.recruits}</td></tr>`).join('');
     }catch(e){}
 }
 
-// ========== RANKING ==========
+// RANKING
 async function renderRanking(){
     try{
         const d=await api('/api/ranking');
         document.getElementById('rkTable').innerHTML=d.ranking.map((r,i)=>
-            `<tr${r.isMe?' style="background:rgba(240,180,41,.08)"':''}>
-            <td>${i<3?['&#129351;','&#129352;','&#129353;'][i]:i+1}</td>
-            <td>${r.name}${r.isMe?' (você)':''}</td><td>${r.network}</td>
-            <td class="green" style="font-weight:700">${R$(r.earnings)}</td></tr>`).join('');
+            `<tr${r.isMe?' style="background:rgba(240,180,41,.08)"':''}><td>${i<3?['&#129351;','&#129352;','&#129353;'][i]:i+1}</td>
+            <td>${r.name}${r.isMe?' (voce)':''}</td><td>${r.network}</td><td class="green" style="font-weight:700">${R$(r.earnings)}</td></tr>`).join('');
     }catch(e){}
 }
 
-// ========== ADMIN ==========
+// ADMIN
 async function renderAdmin(){
     try{
+        // Pending approvals
+        const p=await api('/api/admin/pending');
+        const pp=document.getElementById('pendingPanel');
+        const badge=document.getElementById('adminBadge');
+        if(p.pending.length>0){
+            pp.style.display='block';
+            badge.style.display='block';badge.textContent=p.pending.length;
+            document.getElementById('pendingCount').textContent=p.pending.length+' pendente(s)';
+            document.getElementById('pendingList').innerHTML=p.pending.map(u=>
+                `<div style="display:flex;align-items:center;justify-content:space-between;padding:.6rem 0;border-bottom:1px solid var(--border)">
+                    <div><div style="font-weight:600;font-size:.85rem">${u.name}</div>
+                    <div style="font-size:.72rem;color:var(--muted)">${u.planName} | Convidado por ${u.recruiterName}</div></div>
+                    <div style="display:flex;gap:.35rem">
+                        <button class="btn btn-green btn-sm" onclick="approveUser(${u.id})">Aprovar</button>
+                        <button class="btn btn-red btn-sm" onclick="rejectUser(${u.id})">Rejeitar</button>
+                    </div>
+                </div>`).join('');
+        } else { pp.style.display='none';badge.style.display='none'; }
+
+        // Overview
         const d=await api('/api/admin/overview');
         document.getElementById('aMemb').textContent=d.totalMembers;
         document.getElementById('aInv').textContent=R$(d.totalInvested);
@@ -553,67 +556,60 @@ async function renderAdmin(){
         document.getElementById('aLoss').textContent=d.losing;
         document.getElementById('aLPct').textContent=d.lossPct+'%';
         document.getElementById('adminCollapse').style.display=d.collapsed?'block':'none';
-
         document.getElementById('aRC').textContent=R$(d.systemCash);
         document.getElementById('aTB').textContent=R$(d.totalBalances);
         const cov=parseFloat(d.cashCoverage);
         document.getElementById('aRCp').style.width=Math.min(cov,100)+'%';
         document.getElementById('aRCp').style.background=cov>50?'var(--green)':cov>20?'var(--gold)':'var(--red)';
         document.getElementById('aTBp').style.width=Math.min(d.totalBalances>0?(d.totalBalances/Math.max(d.systemCash,1))*100:0,100)+'%';
-        document.getElementById('aHealth').textContent=cov<30?`CRITICO: Caixa cobre ${cov}% dos saldos!`:cov<60?'Atenção: Caixa baixo':'Caixa saudável';
+        document.getElementById('aHealth').textContent=cov<30?`CRITICO: Caixa cobre ${cov}% dos saldos!`:cov<60?'Atencao: Caixa baixo':'Caixa saudavel';
         document.getElementById('aHealth').style.color=cov<30?'var(--red)':cov<60?'var(--gold)':'var(--green)';
+
+        // PIX config
+        document.getElementById('cfgPixKey').value=d.pixKey||'';
+        document.getElementById('cfgPixName').value=d.pixName||'';
+        document.getElementById('cfgPixType').value=d.pixType||'CPF';
 
         // Levels
         const maxC=Math.max(...d.levels.map(l=>l.count),1);
         document.getElementById('aDist').innerHTML=d.levels.map(l=>{
-            const p=(l.count/maxC)*100;
-            const lp=l.count>0?((l.losers/l.count)*100).toFixed(0):0;
+            const pct=(l.count/maxC)*100;const lp=l.count>0?((l.losers/l.count)*100).toFixed(0):0;
             const clr=lp>60?'var(--red)':lp>30?'var(--gold)':'var(--green)';
-            return `<div style="margin-bottom:.35rem"><div style="display:flex;justify-content:space-between;font-size:.72rem"><span>Nível ${l.level}</span><span>${l.count} pessoas (${lp}% prejuízo)</span></div>
-                <div class="prog" style="height:12px"><div class="prog-f" style="width:${p}%;background:${clr}"></div></div></div>`}).join('');
+            return `<div style="margin-bottom:.35rem"><div style="display:flex;justify-content:space-between;font-size:.72rem"><span>Nivel ${l.level}</span><span>${l.count} pessoas (${lp}% prejuizo)</span></div>
+                <div class="prog" style="height:12px"><div class="prog-f" style="width:${pct}%;background:${clr}"></div></div></div>`}).join('');
 
-        // Users table
         const u=await api('/api/admin/users');
         document.getElementById('aTable').innerHTML=u.users.map(m=>{
-            const st=m.status==='admin'?'<span class="chip chip-y">Admin</span>':m.status==='profit'?'<span class="chip chip-g">Lucro</span>':'<span class="chip chip-r">Perda</span>';
+            const stMap={admin:'<span class="chip chip-y">Admin</span>',profit:'<span class="chip chip-g">Lucro</span>',loss:'<span class="chip chip-r">Perda</span>',pending_payment:'<span class="chip chip-b">Pag.</span>',pending_approval:'<span class="chip chip-p">Aprov.</span>'};
             return `<tr><td style="max-width:80px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${m.name}</td><td>${m.level}</td><td>${R$(m.plan)}</td>
-                <td class="green">${R$(m.totalEarnings)}</td><td class="gold">${R$(m.balance)}</td><td>${m.network}</td><td>${st}</td></tr>`}).join('');
+                <td class="green">${R$(m.totalEarnings)}</td><td class="gold">${R$(m.balance)}</td><td>${m.network}</td><td>${stMap[m.status]||m.status}</td></tr>`}).join('');
     }catch(e){console.error(e)}
 }
 
-async function adminCollapse(){
-    try{const d=await api('/api/admin/toggle-collapse',{method:'POST'});toast(d.message,'warn');refreshCurrent()}catch(e){toast(e.message,'err')}
+async function approveUser(id){try{const d=await api(`/api/admin/approve/${id}`,{method:'POST'});toast(d.message,'ok');refreshCurrent()}catch(e){toast(e.message,'err')}}
+async function rejectUser(id){if(!confirm('Rejeitar este membro?'))return;try{const d=await api(`/api/admin/reject/${id}`,{method:'POST'});toast(d.message,'warn');refreshCurrent()}catch(e){toast(e.message,'err')}}
+async function savePix(){
+    try{
+        const d=await api('/api/admin/set-pix',{method:'POST',body:JSON.stringify({
+            pixKey:document.getElementById('cfgPixKey').value,
+            pixName:document.getElementById('cfgPixName').value,
+            pixType:document.getElementById('cfgPixType').value
+        })});
+        toast(d.message,'ok');
+    }catch(e){toast(e.message,'err')}
 }
-async function adminReopen(){
-    try{const d=await api('/api/admin/toggle-collapse',{method:'POST'});toast(d.message,'ok');refreshCurrent()}catch(e){toast(e.message,'err')}
-}
-async function adminReset(){
-    if(!confirm('Resetar TUDO? Todos os dados serão perdidos.'))return;
-    try{await api('/api/admin/reset',{method:'POST'});toast('Sistema resetado','warn');logout()}catch(e){toast(e.message,'err')}
-}
+async function adminCollapse(){try{const d=await api('/api/admin/toggle-collapse',{method:'POST'});toast(d.message,'warn');refreshCurrent()}catch(e){toast(e.message,'err')}}
+async function adminReopen(){try{const d=await api('/api/admin/toggle-collapse',{method:'POST'});toast(d.message,'ok');refreshCurrent()}catch(e){toast(e.message,'err')}}
+async function adminReset(){if(!confirm('Resetar TUDO?'))return;try{await api('/api/admin/reset',{method:'POST'});toast('Resetado','warn');logout()}catch(e){toast(e.message,'err')}}
 
-// ========== COPY ==========
 function copyCode(){
     const code=user?.inviteCode;if(!code)return;
-    navigator.clipboard.writeText(code).then(()=>toast('Código copiado!','ok')).catch(()=>{
-        // Fallback
-        const i=document.getElementById('hCode');i.select();document.execCommand('copy');toast('Código copiado!','ok');
-    });
+    navigator.clipboard.writeText(code).then(()=>toast('Codigo copiado!','ok')).catch(()=>{});
 }
 
-// ========== LOAD PLANS ==========
-async function loadPlans(){
-    try{
-        const d=await api('/api/plans');
-        document.getElementById('rPlan').innerHTML=d.plans.map(p=>`<option value="${p.value}">${p.name}</option>`).join('');
-    }catch(e){}
-}
+async function loadPlans(){try{const d=await api('/api/plans');document.getElementById('rPlan').innerHTML=d.plans.map(p=>`<option value="${p.value}">${p.name}</option>`).join('')}catch(e){}}
 
-// ========== INIT ==========
-window.addEventListener('load',async()=>{
-    await loadPlans();
-    if(token){enterApp()}
-});
+window.addEventListener('load',async()=>{await loadPlans();if(token){routeUser()}});
 </script>
 </body>
 </html>
